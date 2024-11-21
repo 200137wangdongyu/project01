@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css练习</title>
+
+    <link rel="stylesheet" href="./CSS_files/mycss1.css">
+
+    <style>
+        .red {
+            color: brown;
+        }
+
+        a:hover{
+            color: brown;
+
+        }
+
+        body{
+          background-image: url(./imgefiles/back_star.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          overflow: hidden;
+        }
+        div{
+            width: 500px;
+            height: 800px;
+        }
+
+        .qll{
+            height: 600;
+            width: 400;
+        }
+        
+
+    </style>
+
+</head>
+
+<body>
+    <!-- css有两种写法 
+     1.内部使用 直接在当前html代码中写
+     在title 标签下方定义 需要用 style标签包裹起来 定义格式：
+     选择器:{
+     属性名：属性值
+     }
+
+     2.写一个文件然后 在title下面用link
+
+     3.在行内式使用
+    -->
+    <p>嗡嗡嗡嗡嗡嗡</p>
+
+    <div cstyle="color: red; font-size: 60px;">我是div</div>
+
+
+    <!-- 选择器 -->
+
+    <!-- 1.标签选择器 都是用标签名来命名选择器 如p div 但是无法差异化同名标签 -->
+
+    <!-- 2.类选择器   
+     定义：.类名{....}
+     使用：class="类名"   一个类选择器 可以被多个标签使用 一个标签可以使用多个类选择器，class中用空格将类选择器分隔开
+     -->
+
+
+    <!-- 3.id 选择器  定义#名字 -->
+
+    <!-- 4.通配符选择器 *{属性名 ：属性值} -->
+
+    <!-- 5.复合选择器  后代选择器 父代选择器  后代选择器{
+      属性：属性值} -->
+
+    <!-- 6.并集选择器  选择器1，选择器2，选择器3 选择器{
+       ....} -->
+
+    <!-- 7.交集选择器 标签.选择器{
+        ...} -->
+
+    <!-- 8.伪类选择器 ，选中元素的某个状态设置样式    任何标签都可以设置鼠标悬停状态 
+     鼠标悬停：选择器：hover{
+     }-->
+
+     <!-- 9.CSS样式选择器样式具有继承性 当父级设置了选择器，若是子标签有自己的样式则不会继承父级的样式  在css样式中相同的样式会被覆盖 后面的会覆盖前面的，不同的会叠加 -->
+      <!-- 选择器范围越大 优先级越低-->
+    <p class="red">你好你好</p>
+    <div style="text-align: center;">
+        <img src="./imgefiles/cxk.jpg" >
+
+        <a href="#">SringBoot</a>
+
+    </div>
+
+
+</body>
+
+</html>

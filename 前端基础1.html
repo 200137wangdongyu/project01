@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <!-- 表单 -->
+        <table border="1">
+            <tr>
+                <th>语文</th>
+                <th>数学</th>
+                <th>英语</th>
+                <th>物理</th>
+            </tr>
+            <tr>
+                <th>99</th>
+                <th>95</th>
+                <th>99</th>
+                <th>99</th>
+            </tr>
+
+        </table>
+        <!-- 表单，单选使用name属性相同可以绑定实现单选 -->
+        男生<input type="radio" name="gender" checked>
+        <br>
+        女生<input type="radio" name="gender">
+        <br>
+        mid<input type="radio" name="gender">
+        <br>
+        <input type="checkbox">多选
+        <br>
+        <!-- placeholder 输入提示 -->
+        密码：<input type="password" placeholder="请输入密码">
+    </div>
+
+    <br>
+    <!-- 下拉标签   默认显示：selected-->
+    <div>
+        <select>
+            <option>北京</option>
+            <option selected>上海</option>
+            <option>深圳</option>
+            <option>武汉</option>
+        </select>
+    </div>
+    <br>
+    <!-- 文本域  支持换行，右下方有拖拽功能，后期要关掉  -->
+    <div>
+
+        <textarea> 萨菲罗斯九分零四金佛</textarea>
+    </div>
+
+    <br>
+
+
+    <!--label 可以绑定文字与控件 将文字与控件功能实现一致    for里面的属性值要与控件id相同才能实现功能    增大点解范围 -->
+    <div>
+
+        <!-- 用法一 -->
+        <!-- <input type="radio" id="1" name="gender" checked>
+        <label for="1">男</label>
+        <br>
+        <input type="radio" id="2" name="gender">
+        <label for="2">女</label> -->
+
+        <!-- 用法二 直接用label 包裹 -->
+
+        <label>
+            <input type="radio" name="gender">女<br>
+        </label>
+        <label> <input type="radio" name="gender" checked>男</label>
+
+    </div>
+    <br>
+
+
+    <!-- button 按钮 属性 submit 提交数据到后台（默认功能）  reset 将用户输入的重置 需要在form表单域中使用才能生效
+     form 中 action 中写入要提交的地址
+    -->
+    <div>
+
+        <form>
+            用户名：<input type="text">
+            <br>
+            密码：<input type="password">
+            <br>
+            <button type="submit">提交功能</button>
+            <br>
+            <button type="reset">重置功能</button>
+            <button type="button">普通按钮配合js使用</button></button>
+        </form>
+    </div>
+
+
+    <!-- div 与span -->
+    <div>我占用一整行 我是大盒子 我可以换行</div>
+    <div>我占用一整行</div>
+    <span>我是小盒子 我不换行</span>
+    <span>我是小盒子</span>
+
+
+
+
+
+    <!-- 符号< &lt;      >&gt     空格 &nbsp; 输入  -->
+
+
+
+
+    <!-- CSS  -->
+
+    <br>
+    <div>
+
+    </div>
+
+
+</body>
+
+
+</html>
